@@ -4,34 +4,34 @@ let buttonsxyz = Array.from(document.getElementsByClassName("btn"))
 console.log(buttonsxyz)
 // // btnxyz
 
-function firstFunctionxyz(btnxyz){
-    btnxyz.addEventListener("click",(xyz)=>{
-        console.log(xyz)
-        switch(xyz.target.innerText){
-            case 'C':
-                displayxyz.innerText = ""
-                break
-            case '←':
-                displayxyz.innerText = displayxyz.innerText.slice(0,-1)
-                break
-            case '=':
-                try{
-                    displayxyz.innerText = eval(displayxyz.innerText)
-                    // djfbdj
-                    // diuhjdbjh
-                }catch{
-                    displayxyz.innerText="Error"
-                }
-                break
-            default:
-                displayxyz.innerText = display.innerText + xyz.target.innerText
-                break
-        }
-    })
-}
+// function firstFunctionxyz(btnxyz){
+//     btnxyz.addEventListener("click",(xyz)=>{
+//         console.log(xyz)
+//         switch(xyz.target.innerText){
+//             case 'C':
+//                 displayxyz.innerText = ""
+//                 break
+//             case '←':
+//                 displayxyz.innerText = displayxyz.innerText.slice(0,-1)
+//                 break
+//             case '=':
+//                 try{
+//                     displayxyz.innerText = eval(displayxyz.innerText)
+//                     // djfbdj
+//                     // diuhjdbjh
+//                 }catch{
+//                     displayxyz.innerText="Error"
+//                 }
+//                 break
+//             default:
+//                 displayxyz.innerText = display.innerText + xyz.target.innerText
+//                 break
+//         }
+//     })
+// }
 
 
-console.log(buttonsxyz)
+// console.log(buttonsxyz)
 // buttonsxyz.map(abcdxyz=>firstFunctionxyz(abcdxyz))
 // buttonsxyz.map(firstFunctionxyz)
 // Same things - above 2 lines
